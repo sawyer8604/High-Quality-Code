@@ -5,10 +5,10 @@ namespace Code_Formatting
 {    
     class Program
     {
-        public const string FILE_NAME = "example.bin";
+        public const string FILENAME = "example.bin";
         static void Main(string[] args)
         {
-            FileStream fileStream = new FileStream(FILE_NAME, FileMode.CreateNew);
+            FileStream fileStream = new FileStream(FILENAME, FileMode.CreateNew);
 
             // Create the writer for data.
 
@@ -25,7 +25,7 @@ namespace Code_Formatting
 
             // Create the reader for data.
 
-            fileStream = new FileStream(FILE_NAME, FileMode.Open, FileAccess.Read);
+            fileStream = new FileStream(FILENAME, FileMode.Open, FileAccess.Read);
 
             BinaryReader reader = new BinaryReader(fileStream);
 
